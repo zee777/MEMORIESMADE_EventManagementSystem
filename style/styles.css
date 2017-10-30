@@ -10,7 +10,12 @@
 	position: fixed;
 	z-index: 777;
 	top: 0px;
-}	
+}
+	
+#header_logo{
+	margin-top: 10px;
+	float:left;
+}
 
 #nav{
 	width: 1100px;	
@@ -46,7 +51,21 @@
 	border-radius: 15px;
 }
 
-#header_logo{
-	margin-top: 10px;
-	float:left;
+#reg a:hover{
+	height: 65px;
+	background-color: #fd4b4b;
 }
+
+#reg a:active{
+    background-color: gray;
+}
+
+#login a:hover{
+	height: 65px;
+	color: #ff7777;
+}
+
+#login a:active{
+    color: gray;
+}
+
