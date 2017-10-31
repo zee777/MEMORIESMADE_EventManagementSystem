@@ -9,14 +9,41 @@
 				<div id="header_cont">
 				<div id="header_logo"><a href="index.html"><img src="images\logo_here.png" alt="logo here please"></a></div> 
 					<div id="login_reg">
-						<ul>
-							<li id="login"><a href="#">LOGIN</a></li>
-							<li id="reg"><a href="#">REGISTER</a></li>
-						</ul>
+						<button id="login">Login</button>
+						<button id="reg">Register</button>
+						
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<form action="form_processing.php" method="post">
+									<p>Username</br><input type="text" name="username" value=""></p></br>
+									<p>Password</br><input type="password" name="password" value=""></p></br>
+									<input id="sub" type="submit" type="submit" value="Login">
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			
+			<script>
+				let modal = document.getElementById('myModal');
+				let btn = document.getElementById('reg');
+				let span = document.getElementsByClassName('close')[0];
+				
+				btn.onclick = function(){
+					modal.style.display = "block"
+				}
+				span.onclick = function(){
+					modal.style.display = "none";
+				}
+				window.onclick = function(event){
+					if(event.target == modal){
+						modal.style.display = "none";
+					}
+				}
+				
+			</script>
 			<div id="nav">
 				<div id="nav_cont">
 					<ul id="navigations">
@@ -36,24 +63,24 @@
 			
 			<div id="slider_cont">
 				<img class="slides" src="images\slider_img\wedding_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by v.ivash / Freepik">
-				<img class="slides" src="img_lights.jpg" style="width:100%">
-				<img class="slides" src="img_mountains.jpg" style="width:100%">
+				<img class="slides" src="images\slider_img\birthday_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by Pressfoto / Freepik">
+				<img class="slides" src="images\slider_img\music_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by Bedneyimages / Freepik">
 				
 				<button class="but_prev" onclick="plusDivs(-1)">&#10094;</button>
 				<button class="but_next" onclick="plusDivs(1)">&#10095;</button>
 			</div>
 			
 			<script>
-				var slideIndex = 1;
+				let slideIndex = 1;
 				showDivs(slideIndex);
 
-				function plusDivs(n) {
+				function plusDivs(n){
 				  showDivs(slideIndex += n);
 				}
 
-				function showDivs(n) {
-					var i;
-					var x = document.getElementsByClassName("slides");
+				function showDivs(n){
+					let i;
+					let x = document.getElementsByClassName("slides");
 					if (n > x.length){
 						slideIndex = 1
 					}if (n < 1){
@@ -77,6 +104,30 @@
 			</div>
 			
 			<div id="rec_events">
+				<p class="stylep">Recent Events</p>
+					<div class="gallery">
+						<a target="_blank" href="img\works\Stickers-revised.png"><img src="img\works\Stickers-revised.png" alt="Stickers-for-SITS" class="image"></a>
+					<div class="desc"><div class="text">Stickers for the event of SITS</div></div>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="img\works\Poster.png"><img src="img\works\Poster.png" alt="Poster-for-SITS" class="image"></a>
+					<div class="desc"><div class="text">Passed a poster for the event of SITS</div></div>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="img\works\Events-Timeline3.png"><img src="img\works\Events-Timeline3.png" alt="Events-Timeline-for-SITS" class="image"></a>
+					<div class="desc"><div class="text">Used in the invitation card given to the teachers</div></div>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="img\works\Events-Timeline3.png"><img src="img\works\Events-Timeline3.png" alt="Events-Timeline-for-SITS" class="image"></a>
+					<div class="desc"><div class="text">Used in the invitation card given to the teachers</div></div>
+					</div>
 			</div>
+			
+			<div id="category">
+				<p class="style p">Categories</p>
+				
+				</div>
+			</div>
+			
 		</body>
 	</html>
