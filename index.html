@@ -29,9 +29,54 @@
 						<li class="styled"><a href="#">CONTACT US</a></li>
 						<li class="styled"><a href="#">SERVICES</a></li>
 						<li class="styled"><a href="#">ABOUT US</a></li>
-						<li class="styled"><a href="#">HOME</a></li>
+						<li class="styled"><a href="index.html">HOME</a></li>
 					</ul>
 				</div>
+			</div>
+			
+			<div id="slider_cont">
+				<img class="slides" src="images\slider_img\wedding_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by v.ivash / Freepik">
+				<img class="slides" src="img_lights.jpg" style="width:100%">
+				<img class="slides" src="img_mountains.jpg" style="width:100%">
+				
+				<button class="but_prev" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="but_next" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+					var i;
+					var x = document.getElementsByClassName("slides");
+					if (n > x.length){
+						slideIndex = 1
+					}if (n < 1){
+						slideIndex = x.length
+					}
+					for(i = 0; i < x.length; i++){
+					 x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
+				}
+			</script>
+			
+			<div id="float_imagebg">
+			</div>
+			
+			<div id="image_cont">
+				<ul id="float_img">
+					<li><div id="image"><img src="images\front_img.png"></div></li>
+					<li id="reg1"><a href="#">REGISTER!</a></li>
+				</ul>
+			</div>
+			
+			<div id="rec_events">
 			</div>
 		</body>
 	</html>
