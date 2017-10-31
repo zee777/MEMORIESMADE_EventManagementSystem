@@ -12,8 +12,8 @@
 						<button id="login">Login</button>
 						<button id="reg">Register</button>
 						
-						<div id="myModal" class="modal">
-							<div class="modal-content">
+						<div id="log_myModal" class="modal">
+							<div class="log_modalcontent">
 								<span class="close">&times;</span>
 								<form action="form_processing.php" method="post">
 									<p>Username</br><input type="text" name="username" value=""></p></br>
@@ -22,28 +22,54 @@
 								</form>
 							</div>
 						</div>
+						
+						<div id="reg_myModal" class="modal">
+							<div class="reg_modalcontent">
+								<span class="close">&times;</span>
+								<form action="form_processing.php" method="post">
+									<p>Username</br><input type="text" name="username" value=""></p></br>
+									<p>First Name</br><input type="text" name="fname" value=""></p></br>
+									<p>Last Name</br><input type="text" name="lname" value=""></p></br>
+									<p>Password</br><input type="password" name="password" value=""></p></br>
+									<p>Confirm Password</br><input type="password" name="password" value=""></p></br>
+									<input id="sub" type="submit" type="submit" value="Register">
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			
 			<script>
-				let modal = document.getElementById('myModal');
-				let btn = document.getElementById('reg');
-				let span = document.getElementsByClassName('close')[0];
+				let log_modal = document.getElementById('log_myModal');
+				let reg_modal = document.getElementById('reg_myModal');
+				let log_btn = document.getElementById('login');
+				let reg_btn = document.getElementById('reg');
+				let log_span = document.getElementsByClassName('close')[0];
+				let reg_span = document.getElementsByClassName('close')[1];
 				
-				btn.onclick = function(){
-					modal.style.display = "block"
+				log_btn.onclick = function(){
+					log_modal.style.display = "block";
 				}
-				span.onclick = function(){
-					modal.style.display = "none";
+				reg_btn.onclick = function(){
+					reg_modal.style.display = "block";
+				}
+				reg_span.onclick = function(){
+					reg_modal.style.display = "none";
+				}
+				log_span.onclick = function(){
+					log_modal.style.display = "none";
 				}
 				window.onclick = function(event){
-					if(event.target == modal){
-						modal.style.display = "none";
+					if(event.target == log_modal){
+						log_modal.style.display = "none";
+					}else if(event.target == reg_modal){
+						reg_modal.style.display = "none";
 					}
 				}
-				
 			</script>
+			
+			
 			<div id="nav">
 				<div id="nav_cont">
 					<ul id="navigations">
