@@ -274,26 +274,29 @@
 #about_us{
 	background-color: #ff7777;
 	width: 1287px;
-	height: 320px;
+	height: 350px;
 	z-index: 7;
+	position: relative;
+	top: 141px;
 }
 
 #icons{
 	background-color: white;
 	height: 400px;
-	padding-top: 80px;
+	padding-top: 180px;
 }
 
 #team{
 	background-color: #ff7777;
 	width: 1287px;
 	height: 730px;
+
 }
 
 #head{
 	font-family: Bebas;
 	font-size: 30px;
-	padding: 120px 100px 20px 100px;
+	padding: 180px 100px 20px 100px;
 	background-color: #332a29;
 	color: white;
 	width: 1087px;
@@ -315,7 +318,8 @@
 .paragraph{
 	font-family: Raleway;
 	font-size: 20px;
-	text-align: center;
+	text-align: justify;
+	padding: 10px 0px 10px 0px;
 	color: white;
 	padding: 20px 100px;
 }
