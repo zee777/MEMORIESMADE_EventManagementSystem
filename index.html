@@ -79,21 +79,32 @@
                                 <input type="button" class="button" value="Search">
 							</form>
 						</li>
-						<li class="styled"><a href="#">CONTACT US</a></li>
-						<li class="styled"><a href="#">SERVICES</a></li>
-						<li class="styled"><a href="#">ABOUT US</a></li>
+						<li class="styled"><a href="#footer">CONTACT US</a></li>
+						<li class="styled"><a href="#team">THE TEAM</a></li>
+						<li class="styled"><a href="#about_us">ABOUT US</a></li>
 						<li class="styled"><a href="index.html">HOME</a></li>
 					</ul>
 				</div>
 			</div>
 			
-			<div id="slider_cont">
-				<img class="slides" src="images\slider_img\wedding_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by v.ivash / Freepik">
-				<img class="slides" src="images\slider_img\birthday_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by Pressfoto / Freepik">
-				<img class="slides" src="images\slider_img\music_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by Bedneyimages / Freepik">
+			<div id="slider">
+				<div id="slider_cont">
+					<img class="slides" src="images\slider_img\wedding_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by v.ivash / Freepik">
+					<img class="slides" src="images\slider_img\birthday_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by Pressfoto / Freepik">
+					<img class="slides" src="images\slider_img\music_events.jpg" style="width:100%" alt="http://www.freepik.com Designed by Bedneyimages / Freepik">
+					
+					<button class="but_prev" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="but_next" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+				<div id="float_imagebg">
+				</div>
 				
-				<button class="but_prev" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="but_next" onclick="plusDivs(1)">&#10095;</button>
+				<div id="image_cont">
+					<div id="float_img">
+						<div id="image"><img src="images\front_img.png"></div>
+						
+					</div>
+				</div>
 			</div>
 			
 			<script>
@@ -119,41 +130,27 @@
 				}
 			</script>
 			
-			<div id="float_imagebg">
+			<div id="about_us">
+				<div id="head"><p>ABOUT US</p></div>
+				<p class="paragraph">MemoriesMade is a platform for creating, attending, and finding events that suits your passion, 
+				lifestyle and choice. MemoriesMade allows any Davawenyos around the region to be gathered and 
+				be acquainted with each other through interaction and communication. Our mission is to unite anyone in the region
+				through their passion and preference.</p>
+			</div>
+			<center><div id="icons">
+				<img src="images\icons\create.png" alt="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">
+				<img src="images\icons\join.png" alt="http://www.freepik.com" title="Freepik">
+				<img src="images\icons\find.png" alt=="http://www.freepik.com" title="Freepik">
+				<img src="images\icons\connect.png" alt=="http://www.freepik.com" title="Freepik">
+			</div></center>
+			
+			<div id="team">
+				<p id="head">MEET THE TEAM!</p>
+				<div id="">
 			</div>
 			
-			<div id="image_cont">
-				<ul id="float_img">
-					<li><div id="image"><img src="images\front_img.png"></div></li>
-					<li id="reg1"><a href="#">REGISTER!</a></li>
-				</ul>
+			<div id="copyright">
+				<center><p>&#x24B8;MemoriesMade 2017</p></center>
 			</div>
-			
-			<div id="rec_events">
-				<p class="stylep">Recent Events</p>
-					<div class="gallery">
-						<a target="_blank" href="img\works\Stickers-revised.png"><img src="img\works\Stickers-revised.png" alt="Stickers-for-SITS" class="image"></a>
-					<div class="desc"><div class="text">Stickers for the event of SITS</div></div>
-					</div>
-					<div class="gallery">
-						<a target="_blank" href="img\works\Poster.png"><img src="img\works\Poster.png" alt="Poster-for-SITS" class="image"></a>
-					<div class="desc"><div class="text">Passed a poster for the event of SITS</div></div>
-					</div>
-					<div class="gallery">
-						<a target="_blank" href="img\works\Events-Timeline3.png"><img src="img\works\Events-Timeline3.png" alt="Events-Timeline-for-SITS" class="image"></a>
-					<div class="desc"><div class="text">Used in the invitation card given to the teachers</div></div>
-					</div>
-					<div class="gallery">
-						<a target="_blank" href="img\works\Events-Timeline3.png"><img src="img\works\Events-Timeline3.png" alt="Events-Timeline-for-SITS" class="image"></a>
-					<div class="desc"><div class="text">Used in the invitation card given to the teachers</div></div>
-					</div>
-			</div>
-			
-			<div id="category">
-				<p class="style p">Categories</p>
-				
-				</div>
-			</div>
-			
 		</body>
 	</html>
