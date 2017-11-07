@@ -319,6 +319,51 @@
 	color: white;
 	padding: 70px 100px;
 }
+
+#contact_us{
+	width: 1287px;
+	height: 400px;
+	background-color: #534544;
+	color: white;
+}
+.footer_con{
+	width: 404x;
+	height: 350px;
+	float: left;
+	left: 0;
+	margin: 20px 50px;
+	padding-right: 80px;
+}
+
+.stylef{
+	color: white;
+	font-family: Bebas;
+	font-size: 20px;
+	padding: 50px 0px 0px 137px;
+}
+
+.stylep_con{
+	list-style: none;
+	padding-top: 50px;
+	
+}
+
+.stylep_con li{
+	padding-top: 10px;
+}
+
+.stylep_con a{
+	text-decoration: none;
+	color: #d2d6df;
+	font-family: Gill Sans MT;
+	font-size: 15px;
+}
+
+.stylep_con a:hover{
+	color: #ff7777;
+	text-decoration: underline;
+}
+
 #copyright{
 	color: white;
 	background-color: #332a29;
