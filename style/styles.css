@@ -274,26 +274,30 @@
 #about_us{
 	background-color: #ff7777;
 	width: 1287px;
-	height: 350px;
+	height: 500px;
 	z-index: 7;
 	position: relative;
 	top: 141px;
 }
 
-#icons{
+.icons{
 	background-color: white;
-	height: 400px;
-	padding-top: 180px;
+	height: 300px;
+	padding-top: 200px;
 }
 
 #team{
-	background-color: #ff7777;
+	background-color: #ffbea8;
 	width: 1287px;
 	height: 730px;
 
 }
 
-#head{
+#team img{
+	padding-top: 25px;
+}
+
+.head{
 	font-family: Bebas;
 	font-size: 30px;
 	padding: 180px 100px 20px 100px;
@@ -308,31 +312,13 @@
 	padding: 100px;
 }
 
-#footer{
-	width: 1287px;
-	height: 500px;
-	background-color: #534544;
-	color: white;
-}
-
 .paragraph{
 	font-family: Raleway;
-	font-size: 20px;
+	font-size: 22px;
 	text-align: justify;
-	padding: 10px 0px 10px 0px;
 	color: white;
-	padding: 20px 100px;
+	padding: 70px 100px;
 }
-
-.footer_con{
-	width: 404x;
-	height: 350px;
-	float: left;
-	left: 0;
-	margin: 20px 50px;
-	padding-right: 80px;
-}
-
 #copyright{
 	color: white;
 	background-color: #332a29;
