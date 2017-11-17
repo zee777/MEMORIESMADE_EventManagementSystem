@@ -48,16 +48,10 @@
 			<div id="nav">
 				<div id="nav_cont">
 					<ul id="navigations">
-						<li>
-							<form>
-                                <input type="text" class="search" placeholder="Search event..." required>
-                                <input type="button" class="button" value="Search">
-							</form>
-						</li>
 						<li class="styled"><a href="#contact_us">CONTACT US</a></li>
 						<li class="styled"><a href="#team">THE TEAM</a></li>
 						<li class="styled"><a href="#about_us">ABOUT US</a></li>
-						<li class="styled"><a href="index.html">HOME</a></li>
+						<li class="styled"><a href="index.php">HOME</a></li>
 					</ul>
 				</div>
 			</div>
