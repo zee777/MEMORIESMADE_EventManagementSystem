@@ -76,28 +76,7 @@
 				</div>
 			</div>
 			
-			<script>
-				let slideIndex = 1;
-				showDivs(slideIndex);
-
-				function plusDivs(n){
-				  showDivs(slideIndex += n);
-				}
-
-				function showDivs(n){
-					let i;
-					let x = document.getElementsByClassName("slides");
-					if (n > x.length){
-						slideIndex = 1
-					}if (n < 1){
-						slideIndex = x.length
-					}
-					for(i = 0; i < x.length; i++){
-					 x[i].style.display = "none";  
-					}
-					x[slideIndex-1].style.display = "block";  
-				}
-			</script>
+			<script src="../javascripts/slideshow.js"></script>
 			
 			<div id="about_us">
 				<div class="head"><p>ABOUT US</p></div>
@@ -106,6 +85,7 @@
 				be acquainted with each other through interaction and communication. Our mission is to unite anyone in the region
 				through their passion and preference.</p>
 			</div>
+			
 			<center><div class="icons">
 				<img src="images\icons\create.png" alt="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">
 				<img src="images\icons\join.png" alt="http://www.freepik.com" title="Freepik">
@@ -148,8 +128,16 @@
 				</div>
 			</div>
 			
+			<div id="sample">
+				<p>Administrators</p>
+				<a href = "admin_login.php">ADMIN LogIn</a>
+			</div>
+			
 			<div id="copyright">
 				<center><p>&#x24B8;MemoriesMade 2017</p></center>
 			</div>
 		</body>
 	</html>
+<?php 
+	mysqli_close($connection);
+?>
