@@ -25,15 +25,71 @@
 				<div id="nav_cont">
 					<ul id="navigations">
 						<li>
-							<form>
-                                <input type="text" class="search" placeholder="Search event..." required>
-                                <input type="button" class="button" value="Search">
+							<form method="POST" action="">
+                               <input type="text" id="name" name="event_title" class="search" placeholder="Enter event title..." required>
+                                <input type="submit" name="submit" class="button" value="Search">
 							</form>
+							<?php
+								
+								if(isset($_POST["event_title"])){
+									$event_title = $_POST["event_title"];
+								}
+								if(isset($_POST["submit"])){
+										$query = "SELECT * FROM createevent WHERE event_title = '{$event_title}'";
+										$result = mysqli_query($connection, $query);
+										if(!$result){
+											die("Database query failed!");
+										}else{
+										$num_rows = mysqli_num_rows($result);
+										if($num_rows>0){ 
+							?>
+							
+							<div class="table-responsive">
+							<table class="table table-bordered table-hover table-striped">
+								<thead>
+								<p>
+								<tr>
+									<th>Event Title &nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th>Date Start &nbsp;&nbsp;&nbsp;&nbsp;</th>           
+									<th>Time </th>
+								</tr>
+								</p>
+								</thead>
+							
+								<tbody>
+									<?php
+										while ($num_rows = mysqli_fetch_array($result)) { ?>
+											<tr>
+												<td><?php echo $num_rows['event_title']; ?></td>
+												<td><?php echo $num_rows['start_date']; ?></td>                                        
+												<td><?php echo $num_rows['start_time']; ?> - <?php echo $num_rows['end_time']; ?></td>
+											</tr>
+									<?php } ?>
+								</tbody>
+                            </table>
+							</div>
+							
+							
+							<?php
+							}else{ ?>
+							<h1 class="table-responsive">
+								<small>No Records Found!</small>
+							</h1>
+							
+							<?php
+							}
+							?>
+							<?php
+							}
+							}
+							mysqli_close($connection);
+							?>
+	
 						</li>
 						<li class="styled"><a href="#contact_us">CONTACT US</a></li>
-						<li class="styled"><a href="#team">BROWSE EVENT</a></li>
-						<li class="styled"><a href="#create_event">CREATE EVENT</a></li>
-						<li class="styled"><a href="home.html">HOME</a></li>
+						<li class="styled"><a href="#events">CATEGORIES</a></li>
+						<li class="styled"><a href="#create_event">EVENTS</a></li>
+						<li class="styled"><a href="home.php">HOME</a></li>
 					</ul>
 				</div>
 			</div>
