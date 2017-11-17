@@ -1,3 +1,4 @@
+<?php include("reg_processing.php"); ?>
 <!DOCTYPE>
 	<html>
 		<head>
@@ -15,60 +16,34 @@
 						<div id="log_myModal" class="modal">
 							<div class="log_modalcontent">
 								<span class="close">&times;</span>
-								<form action="form_processing.php" method="post">
+									<form name="loginform" action="adminlogin_processing.php" onsubmit="return log_required()" method="POST">
 									<p>Username</br><input type="text" name="username" value=""></p></br>
 									<p>Password</br><input type="password" name="password" value=""></p></br>
 									<input id="sub" type="submit" type="submit" value="Login">
 								</form>
+									<script src="../javascripts/login_non_empty.js"></script> 
 							</div>
 						</div>
 						
 						<div id="reg_myModal" class="modal">
 							<div class="reg_modalcontent">
 								<span class="close">&times;</span>
-								<form action="form_processing.php" method="post">
-									<p>Username</br><input type="text" name="username" value=""></p></br>
-									<p>First Name</br><input type="text" name="fname" value=""></p></br>
-									<p>Last Name</br><input type="text" name="lname" value=""></p></br>
-									<p>Password</br><input type="password" name="password" value=""></p></br>
-									<p>Confirm Password</br><input type="password" name="password" value=""></p></br>
-									<input id="sub" type="submit" type="submit" value="Register">
+								<form name="regform" action="reg_processing.php" onsubmit="return reg_required()" method="POST">
+									<p><span style="color: #FF0000; font-size: 10pt;">*&nbsp;</span>First Name</br><input type="text" name="firstName" value=""></p></br>
+									<p><span style="color: #FF0000; font-size: 10pt;">*&nbsp;</span>Last Name</br><input type="text" name="lastName" value=""></p></br>
+									<p><span style="color: #FF0000; font-size: 10pt;">*&nbsp;</span>Username</br><input type="text" name="username" value="<?php htmlspecialchars($username); ?>"></p></br>
+									<p><span style="color: #FF0000; font-size: 10pt;">*&nbsp;</span>Password</br><input type="password" name="password" value="<?php htmlspecialchars($password); ?>"></p><br/>
+									<p><span style="color: #FF0000; font-size: 10pt;">*&nbsp;</span>Confirm Password</br><input type="password" name="cPassword" value="<?php htmlspecialchars($cPassword); ?>"></p><br/>
+									<p style="color: #FF0000; font-size: 10pt;">*&nbsp;Should not be left blank</p></br>
+									<input id="sub" type="submit" name="submit" value="Register">
 								</form>
+									<script src="../javascripts/reg_non_empty.js"></script> 	
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<script>
-				let log_modal = document.getElementById('log_myModal');
-				let reg_modal = document.getElementById('reg_myModal');
-				let log_btn = document.getElementById('login');
-				let reg_btn = document.getElementById('reg');
-				let log_span = document.getElementsByClassName('close')[0];
-				let reg_span = document.getElementsByClassName('close')[1];
-				
-				log_btn.onclick = function(){
-					log_modal.style.display = "block";
-				}
-				reg_btn.onclick = function(){
-					reg_modal.style.display = "block";
-				}
-				reg_span.onclick = function(){
-					reg_modal.style.display = "none";
-				}
-				log_span.onclick = function(){
-					log_modal.style.display = "none";
-				}
-				window.onclick = function(event){
-					if(event.target == log_modal){
-						log_modal.style.display = "none";
-					}else if(event.target == reg_modal){
-						reg_modal.style.display = "none";
-					}
-				}
-			</script>
-			
+			<script src="../javascripts/modal.js"></script>	
 			
 			<div id="nav">
 				<div id="nav_cont">
