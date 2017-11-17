@@ -16,127 +16,124 @@
 	margin-top: 10px;
 	float: left;
 }
- 
+
 #header_cont{
 	width: 1100px;	
 	height: 80px;
 }
 
-#header_cont button{
-    width: 100px;
-    height: 50px;
+.dropdown{ /*dropdown button and contents*/
 	float: right;
+    position: relative;
+	right: 18px;
+    display: inline-block;
+}
+
+.dropbtn{
 	font-family: Bebas;
-	font-size: 17px;
+    transition: all 0.3s ease;
 	color: white;
-	margin-top: 22px;
-	border: 0px;
-}
-
-#reg{
 	background-color: #ff7777;
-	padding: 10px;
-	border-radius: 12px;
-}
-
-#reg:hover{
-	background-color: #fd4b4b;
-}
-
-#reg:active{
-    background-color: gray;
-}
-
-#login{
-	background-color: #332a29;
-}
-
-#login:hover{
-	color: #ff7777;
-}
-
-#login:active{
-    color: gray;
-}
-
-.modal{
-	display: none;
-	position: fixed;
-	z-index: 5;
-	left:0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.log_modalcontent{
-	background-color: #fefefe;
-	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 500px;	
-	height: 280px;
-	z-index: 5;
-}
-
-.log_modalcontent p{
-	margin: 15px 0px 0px 55px;
-	font-family: Bebas;
-	font-size: 15px;
-	color: #332a29;
-}
-
-.log_modalcontent input{
-	margin-top: 10px;
-	padding: 10px;
-	width: 80%;
-}
-
-.reg_modalcontent{
-	background-color: #fefefe;
-	margin: 5% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 500px;	
-	height: 570px;
-	z-index: 5;
-}
-
-.reg_modalcontent p{
-	margin: 15px 0px 0px 55px;
-	font-family: Bebas;
-	font-size: 15px;
-	color: #332a29;
-}
-
-.reg_modalcontent input{
-	margin-top: 10px;
-	padding: 10px;
-	width: 80%;
-}
-
-#sub{
-	margin: 15px 0px 0px 55px;
-	width: 100px;
-	background-color: #ff7777;
-	border: 0;
-	font-family: Bebas;
-	font-size: 20px;
-	color: white;
-}
-
-.close{
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close:hover, .close:focus{
-	color: #000;
 	text-decoration: none;
-	cursor: pointer;
+	font-size: 100%;
+	border: none;
+	padding: 10px 30px 12px 30px;
+	margin-top: 22px;
+}
+
+.dropdown-content{
+   	display: none;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+	right: 0px;
+    box-shadow: none;
+    z-index: 1;
+}
+
+.dropdown-content a{
+	font-family: Bebas;
+    padding: 16px 20px 20px 10px;
+    text-decoration: none;
+	color: #ff7777;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+	background-color: #ff7777;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	margin-left: -15px;
+	display: block;
+}
+
+.dropdown .dropbtn:hover {
+	background-color: #ff7777;
+}
+
+.dropbtn_centernav{
+	float: left;
+	display: inline;
+	font-family: Bebas;
+    transition: all 0.3s ease;
+	color: white;
+	text-decoration: none;
+	font-size: 100%;
+	border: none;
+	padding: 10px;
+	margin: 2px;
+	position: relative;
+	background-color: #534544;
+	}
+
+.dropdown-content_centernav {
+	height: 500px;
+   	display: none;
+    position: absolute;
+    min-width: 1000px;
+    box-shadow: none;
+	transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.dropdown-content_centernav h2 {
+	text-align: center;
+	color: black;
+	padding: 10px;
+	margin-top: 100px;
+	font-size: 40px;
+}
+
+.dropdown-content_centernav {
+	color: black;
+	padding: 50px 50px;
+	margin-top: 100px;
+	font-size: 25px;
+}
+
+.dropdown_centernav:hover .dropdown-content_centernav {
+	margin-top: 50px;
+	margin-left: -500px;
+	display: block;
+	width: 100%;
+	background-color: #ff7777;
+	z-index: 99;
+}
+
+.dropbtn_centernav:hover {
+	background-color: #ff7777;
+}
+
+.table-responsive {
+	margin: 0px -250px 10px 10px;
+	padding: 20px;
+	font-size: 18px;
+	color: #332a29;
+	background-color: #ff7777;
+	z-index: 1;
 }
 
 #nav{
@@ -187,7 +184,7 @@
 }
 
 #slider{
-	width: 1287px;
+	width: 1349px;
 	height: 580px;
 	position: relative;
 	top: 140px;
@@ -195,7 +192,7 @@
 
 #slider_cont{
 	z-index: 1;
-	width: 1287px;
+	width: 1349px;
 }
 
 #float_imagebg{
@@ -268,39 +265,133 @@
 
 .but_next{
 	bottom: 330px;
-	left: 1200px;
+	left: 1262px;
 }
 
 #create_event{
-	background-color: #ff7777;
-	width: 1287px;
-	height: 400px;
+	background-color: white;
+	width: 1349px;
+	height: 500px;
 	z-index: 7;
 	position: relative;
 	top: 141px;
+	padding: 0px 0px 150px 0px;
+
 }
+
+#create_event img{
+	padding-top: 80px;
+}
+
+#create_event a:hover{
+	background-color: #ff7777;
+	opacity: 0.5;
+}
+
+#create_event a:active{
+	background-color: black;
+	opacity: 0.5;
+}
+
+
 
 .icons{
 	background-color: white;
 	height: 300px;
-	padding-top: 200px;
 }
 
 #team{
 	background-color: #ffbea8;
-	width: 1287px;
+	width: 1349px;
 	height: 730px;
 
 }
 
-#team img{
-	padding-top: 25px;
+#category{
+	width: 1349px;
+	height: 800px;
+	background-color: #ff7777;
 }
+
+#stylep1{
+	color: white;
+	font-family: Bebas;
+	font-size: 25px;
+	padding: 20px 100px;
+}
+
+div.gallery {
+    margin: 70px 0px 0px 50px;
+    float: left;
+    width: 250px;
+	height: 250px;
+	background-color: #333333;
+	color: white;
+	position: relative;
+	z-index: 0;
+}
+
+div.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: Gill Sans MT;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.gallery:hover .desc {
+  height: 100%;
+}
+
+.text {
+  white-space: wrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#footer{
+	width: 1287px;
+	height: 500px;
+	background-color: #534544;
+	color: white;
+}
+.footer_con{
+	width: 404x;
+	height: 350px;
+	float: left;
+	left: 0;
+	margin: 10px 10px;
+	padding-right: 80px;
+
+}
+
 
 .head{
 	font-family: Bebas;
 	font-size: 30px;
-	padding: 180px 100px 20px 100px;
+	padding: 180px 131px 20px 131px;
 	background-color: #332a29;
 	color: white;
 	width: 1087px;
@@ -321,7 +412,7 @@
 }
 
 #contact_us{
-	width: 1287px;
+	width: 1349px;
 	height: 400px;
 	background-color: #534544;
 	color: white;
@@ -367,6 +458,7 @@
 #copyright{
 	color: white;
 	background-color: #332a29;
+	width: 100%;
 	height: 20px;
 	padding: 10px;
 	font-size: 12px;
