@@ -10,7 +10,14 @@
 		<body>
 			<div id="header">
 				<div id="header_cont">
-				<div id="header_logo"><a href="index.html"><img src="images\logo_here.png" alt="logo here please"></a></div> 						
+						<div id="header_logo"><a href="home.php"><img src="..\images\logo_here.png" alt="logo here please"></a></div>
+						<div class="dropdown">
+							<button class="dropbtn"><?php ($username) ?></button>
+							<div class="dropdown-content">
+								<a href="profile.php">View Profile </a>
+								<a href="index.php">Log out</a>
+							</div>
+						</div>
 				</div>
 			</div>
 			
