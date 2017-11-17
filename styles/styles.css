@@ -76,7 +76,7 @@
 	padding: 20px;
 	border: 1px solid #888;
 	width: 500px;	
-	height: 280px;
+	height: 270px;
 	z-index: 5;
 }
 
@@ -95,11 +95,11 @@
 
 .reg_modalcontent{
 	background-color: #fefefe;
-	margin: 5% auto;
+	margin: 1% auto;
 	padding: 20px;
 	border: 1px solid #888;
 	width: 500px;	
-	height: 570px;
+	height: 630px;
 	z-index: 5;
 }
 
@@ -114,6 +114,10 @@
 	margin-top: 10px;
 	padding: 10px;
 	width: 80%;
+}
+
+input:focus, textarea:focus{  
+background-color: lightyellow;  
 }
 
 #sub{
@@ -300,10 +304,10 @@
 .head{
 	font-family: Bebas;
 	font-size: 30px;
-	padding: 180px 100px 20px 100px;
+	padding: 180px 131px 20px 131px;
 	background-color: #332a29;
 	color: white;
-	width: 1087px;
+	width: 1025px;
 }
 
 #head2{
@@ -362,6 +366,23 @@
 .stylep_con a:hover{
 	color: #ff7777;
 	text-decoration: underline;
+}
+
+
+#sample{
+	background-color: #332a29;
+	width: 1287px;
+	height: 20px;
+}
+
+#sample a{
+	font-family: Gill Sans MT;
+	text-decoration: none;
+	font-size: 12px;
+	color: gray;
+	position : relative;
+	bottom: 10px;
+	left: 1200px;
 }
 
 #copyright{
