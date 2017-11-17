@@ -114,33 +114,12 @@
 				</div>
 			</div>
 			
-			<script>
-				let slideIndex = 1;
-				showDivs(slideIndex);
-
-				function plusDivs(n){
-				  showDivs(slideIndex += n);
-				}
-
-				function showDivs(n){
-					let i;
-					let x = document.getElementsByClassName("slides");
-					if (n > x.length){
-						slideIndex = 1
-					}if (n < 1){
-						slideIndex = x.length
-					}
-					for(i = 0; i < x.length; i++){
-					 x[i].style.display = "none";  
-					}
-					x[slideIndex-1].style.display = "block";  
-				}
-			</script>
+			<script src="../javascripts/slideshow.js"></script>	
 			
 			<div id="create_event">
-				<div class="head"><p>CREATE EVENT</p></div><center><div class="icons">
-				<img src="images\icons\create.png" alt="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">
-			</div>
+				<div class="head"><p>EVENTS</p></div>
+				<a href="createEvent.php"><img src="..\images\icons\create.png" alt="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar"></a>
+				<a href="joinEvent.php"><img src="..\images\icons\join.png" alt="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar"></a>
 			</div>
 			
 			<div id="team">
