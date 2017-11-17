@@ -122,12 +122,43 @@
 				<a href="joinEvent.php"><img src="..\images\icons\join.png" alt="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar"></a>
 			</div>
 			
-			<div id="team">
-				<p class="head">MEET THE TEAM!</p>
-				<center><img src="images\team\noona1.png">
-				<img src="images\team\noona2.png">
-				<img src="images\team\noona3.png">
-				<img src="images\team\noona4.png"></center>
+			<div id="events">
+			<div class="head"><p>CATEGORIES</p></div>
+			<div id="category">
+					<div class="gallery">
+						<a href="..\images\categories_img\music_events.jpg"><img src="..\images\categories_img\music_events.jpg" alt="http://www.freepik.com Designed by skadyfernix / Freepik" class="image"></a>
+						<a href="music_cat.php"><div class="desc"><div class="text">MUSIC</div></div></a>
+					</div>
+					<div class="gallery">
+						<a href="..\images\categories_img\parties_events.jpg"><img src="..\images\categories_img\parties_events.jpg" alt="http://www.freepik.com Designed by Freepik" class="image"></a>
+						<a href="parties_cat.php"><div class="desc"><div class="text">PARTIES/FESTIVALS</div></div></a>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="..\images\categories_img\technology_events.jpg"><img src="..\images\categories_img\technology_events.jpg" alt="http://www.freepik.com Designed by ijeab / Freepik" class="image"></a>
+						<a href="technology_cat.php"><div class="desc"><div class="text">TECHNOLOGY</div></div></a>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="..\images\categories_img\arts_events.jpg"><img src="..\images\categories_img\arts_events.jpg" alt="http://www.freeimages.comphotogallery-series-1-1554546" class="image"></a>
+						<a href="arts_cat.php"><div class="desc"><div class="text">ARTS</div></div></a>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="..\images\categories_img\food_events.jpeg"><img src="..\images\categories_img\food_events.jpeg" alt="https://www.anglotopia.net/site-news/featured/brit-food-fiver-five-great-autumn-food-festivals-britain-plan-next-trip-around/" class="image"></a>
+						<a href="food_cat.php"><div class="desc"><div class="text">FOOD AND DRINKS</div></div></a>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="..\images\categories_img\sports_events.jpg"><img src="..\images\categories_img\sports_events.jpg" alt="http://www.freepik.com" class="image"></a>
+						<a href="sports_cat.php"><div class="desc"><div class="text">SPORTS</div></div></a>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="..\images\categories_img\health_events.jpg"><img src="..\images\categories_img\health_events.jpg" alt="http://www.freepik.com Designed by Jannoon028 / Freepik" class="image"></a>
+						<a href="health_cat.php"><div class="desc"><div class="text">HEALTH</div></div></a>
+					</div>
+					<div class="gallery">
+						<a target="_blank" href="..\images\categories_img\networking_events.jpg"><img src="..\images\categories_img\networking_events.jpg" alt="https://www.marketingdonut.co.uk/sites/default/files/how-networking-benefits-my-business153117176.jpg" class="image"></a>
+						<a href="networking_cat.php"><div class="desc"><div class="text">NETWORKING</div></div></a>
+					</div>
+				</div>
+			</div>
 			</div>
 			
 			<div id="contact_us">
