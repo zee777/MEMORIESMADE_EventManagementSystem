@@ -1,0 +1,53 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+
+body{
+	background-color: #e8eeef;
+}
+
+#container{
+	width: 1100px;
+	height: 100%;
+}
+
+h1{
+	margin-top: 110px;
+	padding: 20px;
+	width: 100%;
+	font-family: Bebas;
+	font-size: 30px;
+	color: white;  
+	background-color: #ff7777;
+	border-bottom: 5px solid gray;
+	text-align: center;
+	position: relative;
+	right: 20px;
+	bottom: 50px;
+}
+
+
+.table-responsive1{
+	position: absolute;
+	width: 1100px;
+	background-color: white;
+	height: 500%;
+}
+
+.table_events{
+	border: 1px solid black;
+	background-color: white;
+}
+.table_events, th, td{
+	padding: 10px 100px;
+	text-align: left;
+}
+
+.image td{
+	padding: 70px;
+}
+
+.space td{
+	padding-top: 100px;
+}

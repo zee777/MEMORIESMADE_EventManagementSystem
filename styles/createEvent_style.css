@@ -1,0 +1,220 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#body{
+	background-color: #e8eeef;
+}
+
+#container{
+	width: 750px;
+	background-color: white;
+}
+	
+h1{
+	font-family: Bebas;
+	font-size: 30px;
+	color: white;  
+	background-color: #ff7777;
+	text-align: center;
+	padding: 10px;
+
+}
+
+
+fieldset{
+	margin: 80px 10px 50px 10px;
+	
+}
+
+#title{
+	font-family: Bebas;
+	font-size: 25px;	
+	color: #332a29;
+	float: left;
+	padding-left: 20px;
+}
+
+label{
+	font-family: Raleway;
+	font-weight: bold;
+	display: inherit;
+	margin-bottom: 8px;
+	font-size: 18px;
+	padding-left: 50px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="location"],
+input[type="int"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+	background: rgba(255,255,255,0.1);
+	border: 1px solid gray;
+	border-radius: 5px;
+	font-size: 12px;
+	height: 15px;
+	margin-left: 50px;
+	padding: 8px;
+	width: 480px;
+	background: #f4f7f8;
+	color: black;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 19px;
+	
+}
+
+textarea{
+	margin: 10px 0 0 140px;
+	border-radius: 5px;
+	height: 200px;
+	
+}
+
+input[name="location"]{
+	margin-left: 62px;
+}
+
+input[type="Date"]{
+	margin-left: 70px;
+}
+
+label[for="desc"]{
+	padding-left: 0px;	
+}
+
+#start{
+	font-family: Raleway;
+	font-size: 15px;
+	padding: 0 182px 0 120px;
+}
+
+#end{
+	font-family: Raleway;
+	font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  margin: 15px 0px 0px 50px;
+}
+
+input:focus, textarea:focus{  
+background-color: lightyellow;
+}
+
+select{
+  padding: 6px;
+  height: 28px;
+  border-radius: 5px;
+}	
+
+.ticket{
+  color: #FFF;
+  background-color: #ff7777;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #ff7777;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin: 25px 10px 0px 0px;
+  
+}
+
+button{
+	background-color: #ff7777;
+	color: white;
+	width: 120px;
+	height: 50px;
+	font-family: Raleway;
+	border: 0;
+	margin: 10px;
+	border-bottom: 1px solid #8e8e8e;
+	border-width: 0 0 3px 0; 
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: #fc5555;
+}
+
+button:active{
+	background-color: gray;
+	border-width: 0 0 0 0; 
+}
+
+#cancel{
+	background-color: gray;
+	position: relative;
+	margin-top: -100px;
+	bottom: 106px;
+	left: 200px;
+}
+
+#cancel a{
+	text-decoration: none;
+	color: white;
+}
+
+#cancel:hover{
+	background-color: black;
+}
+
+#cancel:active{
+	background-color: gray;
+	border-width: 0 0 0 0; 
+}
+
+#starts{
+	font-family: Gill Sans MT;
+	font-size: 20px;
+	padding-left: 30px;
+	
+}
+
+#ends{
+	font-family: Gill Sans MT;
+	font-size: 20px;
+	padding-left: 272px;
+}
+
+label.light {
+	font-family: Raleway;
+	font-size: 15px;
+	display: inline;
+}
+
+.number {
+  background-color: #ff7777;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 1.0em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.date {
+	margin:100px 50px;
+
+}
+
+hr{
+	position: relative;
+	right: 50px;
+	width: 107.1%;
+}

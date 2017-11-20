@@ -1,0 +1,109 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+
+body{
+	background-color: #5b5959;
+}
+
+#container{
+	background-color: white;
+	width: 700px;
+	height: 100%;
+}
+
+#border{
+	border: 1px solid gray;
+	width: 650px;
+	height: 600px;
+	margin: 15px 25px;
+}
+
+#title{
+	height: 50px;
+	background-color: #ff7777;
+	font-family: Bebas;
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+}
+
+table{
+	margin: 30px 0 0 30px;
+}
+
+td{
+	font-family: Raleway;
+	font-size: 20px;
+	padding: 0 0 20px 50px;
+}
+
+tr{
+	margin-bottom: 0px;
+}
+
+input{
+	background-color: white;
+	width: 300px;
+	height: 30px;
+	margin: 10px 0px 0px 0px;
+}
+
+input:focus, textarea:focus{  
+background-color: lightyellow;  
+}
+
+input[type=submit]{
+	background-color: #ff7777;
+	width: 100px;
+	height: 50px;
+	border-bottom: 1px solid #8e8e8e;
+	border-width: 0 0 3px 0; 
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 34px 0 0 50px;
+}
+
+input[type=submit]:hover{
+	background-color: #fc5555;
+}
+
+input[type=submit]:active{
+	background-color: gray;
+	border-width: 0 0 0 0; 
+}
+
+a{
+	font-family: Raleway;
+	font-size: 15px;
+	position: relative;
+	top: 15px;
+	left: 20px;
+	color: gray;
+}
+
+input[name=user_sub]{
+	margin-top: 220px;
+}
+input[name=edit_sub]{
+	position: relative;
+	right: 90px;
+}
+input[name=edit_sub1]{
+	position: relative;
+	right: 90px;
+	top: 180px;
+}
+
+#back{
+	position: relative;
+	right: 90px;
+}
+
+#back2{
+	position: relative;
+	right: 90px;
+	top: 180px;
+}
